@@ -1,0 +1,26 @@
+{
+  "name": "algolia-proxy",
+  "version": "0.0.1",
+  "description": "NSWG proxy to offer public API",
+  "main": "server.js",
+  "scripts": {
+    "test": "lab"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdeturckheim/algolia-proxy.git"
+  },
+  "author": "vdeturckheim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vdeturckheim/algolia-proxy/issues"
+  },
+  "homepage": "https://github.com/vdeturckheim/algolia-proxy#readme",
+  "dependencies": {
+    "algoliasearch": "^3.30.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "joi": "^13.7.0",
+    "semver": "^5.6.0"
+  }
+}
