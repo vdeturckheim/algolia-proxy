@@ -21,6 +21,11 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "joi": "^13.7.0",
+    "joi-extension-semver": "^2.0.0",
     "semver": "^5.6.0"
+  },
+  "devDependencies": {
+    "code": "^5.2.0",
+    "lab": "^16.1.0"
   }
 }
