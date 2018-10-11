@@ -4,7 +4,8 @@
   "description": "NSWG proxy to offer public API",
   "main": "server.js",
   "scripts": {
-    "test": "lab"
+    "test": "lab",
+    "start": "node --experimental-worker server.js"
   },
   "repository": {
     "type": "git",
