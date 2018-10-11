@@ -27,5 +27,8 @@
   "devDependencies": {
     "code": "^5.2.0",
     "lab": "^16.1.0"
+  },
+  "engines": {
+    "node": ">=10.10.0"
   }
 }
