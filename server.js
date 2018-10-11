@@ -36,5 +36,5 @@ app.post('/advisories', validateBody, (req, res, next) => {
 
 app.listen(Config.port, () => {
 
-    console.log('ok')
+    console.log(`App listening on port ${Config.port}`)
 });
