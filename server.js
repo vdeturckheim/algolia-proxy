@@ -9,13 +9,23 @@ const Validate = require('./lib/validate');
 const app = Express();
 app.use(BodyParser.json());
 
-
 app.post('/advisories', Validate.body, (req, res, next) => {
 
     Vuln.batchSearch(req.body)
         .then((x) => res.json(x))
         .catch(next)
 });
+
+app.use((err, req, res, next) => {
+
+    console.log(err);
+    if (err.isJoi) {
+        res.status(400);
+        return res.json(err);
+    }
+    return next(err);
+});
+
 
 app.listen(Config.port, () => {
 
