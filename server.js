@@ -9,7 +9,7 @@ const Validate = require('./lib/validate');
 const app = Express();
 app.use(BodyParser.json());
 
-app.post('/advisories', Validate.body, (req, res, next) => {
+app.post('/advisories/ecosystem', Validate.body, (req, res, next) => {
 
     Vuln.batchSearch(req.body)
         .then((x) => res.json(x))
