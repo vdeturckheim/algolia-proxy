@@ -20,7 +20,7 @@
   "dependencies": {
     "algoliasearch": "^3.30.0",
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "express": "^4.19.2",
     "joi": "^13.7.0",
     "joi-extension-semver": "^2.0.0",
     "semver": "^5.6.0",
